@@ -37,12 +37,16 @@ you have a multimeter, you can verify that the GPIOs are indeed changing.
 3. Press Start
 4. Log in to the VM: Username “nerves”, password “nerves”
 5. cd nerves-sdk
-6. git pull
+6. Run `git pull` to make sure that you have the latest code
+6. make nerves_rpi_defconfig
+6. Optional: turn on the compiler cache to make rebuilds run *much* faster. Run
+   `make menuconfig`, go to "Build options", select "Enable compiler cache".
+    Press the right arrow key to select "Exit".
 7. make
-8. . ./nerves-env
-9. git clone git://github.com/nerves-project/nerves-starter-kit
+8. Update your environment to build Nerves projects by running `. ./nerves-env`
+9. Download the starter project: `git clone git://github.com/nerves-project/nerves-starter-kit`
 10. make
-11. Plug in an SDCard reader
+11. Plug in an SDCard reader and an SDCard that you don't mind erasing.
 12. sudo mmccopy `_images/nerves-elixir-trivial.img`
 13. Plug the SDCard into the Raspberry Pi
 14. Connect an LED and resister up to GPIO 22
