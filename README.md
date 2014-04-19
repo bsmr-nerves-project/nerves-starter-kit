@@ -45,4 +45,5 @@ you have a multimeter, you can verify that the GPIOs are indeed changing.
 11. Plug in an SDCard reader
 12. sudo mmccopy `_images/nerves-elixir-trivial.img`
 13. Plug the SDCard into the Raspberry Pi
-
+14. Connect an LED and resister up to GPIO 22
+15. Power up the Raspberry Pi
