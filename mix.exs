@@ -24,6 +24,7 @@ defmodule NervesStarterKit.Mixfile do
       {:lager, github: "basho/lager", tag: "2.0.3", override: true},
       {:exlager, github: "khia/exlager"},
       {:l2elog, github: "fhunleth/l2elog"},
+      {:elixir_ale, github: "fhunleth/elixir_ale"},
       ]
   end
 

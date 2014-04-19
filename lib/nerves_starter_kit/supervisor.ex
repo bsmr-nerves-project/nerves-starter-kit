@@ -1,5 +1,4 @@
 defmodule NervesStarterKit.Supervisor do
-
   use Supervisor.Behaviour
 
   def start_link do
@@ -9,7 +8,7 @@ defmodule NervesStarterKit.Supervisor do
   def init([]) do
     children = [
       # Define workers and child supervisors to be supervised
-      # worker(NervesStarterKit.Worker, [])
+      worker(NervesStarterKit.Worker, [])
     ]
 
     # See http://elixir-lang.org/docs/stable/Supervisor.Behaviour.html
