@@ -32,11 +32,14 @@ you have a multimeter, you can verify that the GPIOs are indeed changing.
 
 ## Installing and running the VM
 
-1. Install VirtualBox
+1. Install VirtualBox and the Oracle VM VirtualBox Extension Pack. The latter
+   is needed to access USB devices inside of the VM. You'll need this to write
+   to the SDCard from inside the VM. The alternative is to copy the firmware
+   image outside of the VM and write it to the SDCard using the host OS.
 2. Obtain the NervesStarterVM appliance and import it into VirtualBox
 3. Press Start
 4. Log in to the VM: Username “nerves”, password “nerves”
-5. cd nerves-sdk
+5. Open up a terminal and `cd nerves-sdk`
 6. Run `git pull` to make sure that you have the latest code
 6. make nerves_rpi_defconfig
 6. Optional: turn on the compiler cache to make rebuilds run *much* faster. Run
