@@ -50,7 +50,9 @@ you have a multimeter, you can verify that the GPIOs are indeed changing.
 9. Download the starter project: `git clone git://github.com/nerves-project/nerves-starter-kit`
 10. make
 11. Plug in an SDCard reader and an SDCard that you don't mind erasing.
-12. sudo mmccopy `_images/nerves-elixir-trivial.img`
+12. sudo-mmccopy `_images/nerves-elixir-trivial.img` (NOTE the hyphen.
+    `sudo-mmccopy` is a wrapper around the mmccopy utility that's built by
+    Nerves to run it as the root user.)
 13. Plug the SDCard into the Raspberry Pi
 14. Connect an LED and resister up to GPIO 22
 15. Power up the Raspberry Pi
